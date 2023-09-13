@@ -3,9 +3,9 @@
     "eb35a98f-330c-4bfc-9d23-5af708e9a790": {
       "type": "welcome-section",
       "settings": {
-        "heading_text": "default subtitle",
-        "paragraph_text": "default title",
-        "paragraph": "default paragraph"
+        "heading_text": "Title",
+        "paragraph_text": "Paragraph",
+        "paragraph": ""
       }
     },
     "image_banner": {
