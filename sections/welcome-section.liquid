@@ -1,14 +1,18 @@
-<div class="twcss-mx-auto twcss-max-w-screen-lg">
-<div class="welcome-section twcss-grid twcss-grid-cols-2 twcss-py-12">
-  <!-- First Column -->
-  <div>
-    <h1 class="twcss-text-7xl twcss-font-semibold twcss-mb-4">{{ section.settings.heading_text }}</h1>
-    <p class="twcss-text-gray-600 twcss-mb-4">{{ section.settings.paragraph_text }}</p>
-    <button>Button</button>
-  </div>
+<div class="twcss-mx-auto twcss-max-w-screen-lg content-container color-{{ section.settings.color_scheme }}">
+  <div class="welcome-section twcss-grid twcss-grid-cols-2 twcss-py-12">
+    <!-- First Column -->
+    <div>
+      <h1 class="twcss-text-7xl twcss-font-semibold twcss-mb-4">{{ section.settings.heading_text }}</h1>
+      <p class="twcss-text-gray-600 twcss-mb-4">{{ section.settings.paragraph_text }}</p>
+      <button>Button</button>
+    </div>
     <!-- Second Column -->
-      <img srcset="{{ section.settings.background_image | img_url: 'master' }}" class="twcss-w-full twcss-h-auto twcss-rounded-xl" alt="hero image">
-</div>
+    <img
+      srcset="{{ section.settings.background_image | img_url: 'master' }}"
+      class="twcss-w-full twcss-h-auto twcss-rounded-xl"
+      alt="hero image"
+    >
+  </div>
 </div>
 
 {% schema %}
