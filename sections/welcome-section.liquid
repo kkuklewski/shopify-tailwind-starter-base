@@ -3,19 +3,29 @@
   <div class="twcss-col-span-1">
     <h1 class="twcss-text-3xl twcss-font-semibold twcss-mb-4">{{ block.settings.heading_text }}</h1>
     <p class="twcss-text-gray-600 twcss-mb-4">{{ block.settings.paragraph_text }}</p>
-    <a href="#" class="twcss-bg-blue-500 twcss-text-white twcss-px-4 twcss-py-2 twcss-rounded twcss-hover:bg-blue-600 twcss-transition twcss-duration-300">Button</a>
+    <a
+      href="#"
+      class="twcss-bg-blue-500 twcss-text-white twcss-px-4 twcss-py-2 twcss-rounded twcss-hover:bg-blue-600 twcss-transition twcss-duration-300"
+      >Button</a
+    >
   </div>
-  
+
   <!-- Second Column -->
   <div class="twcss-col-span-1">
     <span>image here</span>
   </div>
 </div>
 
-
 {% schema %}
 {
   "name": "Welcome Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Slideshow"
+    }
+  ],
   "blocks": [
     {
       "type": "heading",
@@ -45,7 +55,9 @@
   "presets": [
     {
       "name": "Welcome Section",
-      "category": "Header"
+      "settings": {
+        "title": "Welcome Section"
+      }
     }
   ]
 }
