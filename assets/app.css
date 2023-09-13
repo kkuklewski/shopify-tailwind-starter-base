@@ -468,6 +468,42 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.xabsolute {
+  position: absolute;
+}
+
+.xrelative {
+  position: relative;
+}
+
+.xtop-0 {
+  top: 0px;
+}
+
+.xright-0 {
+  right: 0px;
+}
+
+.xright-32 {
+  right: 8rem;
+}
+
+.xright-64 {
+  right: 16rem;
+}
+
+.xright-72 {
+  right: 18rem;
+}
+
+.xtop-24 {
+  top: 6rem;
+}
+
+.xtop-12 {
+  top: 3rem;
+}
+
 .xmx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -483,6 +519,34 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .xmt-11 {
   margin-top: 2.75rem;
+}
+
+.xmb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.xmb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.xmb-12 {
+  margin-bottom: 3rem;
+}
+
+.xmb-9 {
+  margin-bottom: 2.25rem;
+}
+
+.xmt-24 {
+  margin-top: 6rem;
+}
+
+.xmt-48 {
+  margin-top: 12rem;
+}
+
+.xmb-24 {
+  margin-bottom: 6rem;
 }
 
 .xflex {
@@ -509,12 +573,80 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 32rem;
 }
 
+.xmax-w-screen-xlg {
+  max-width: 1440px;
+}
+
+.xmax-w-xl {
+  max-width: 36rem;
+}
+
+.xmax-w-2xl {
+  max-width: 42rem;
+}
+
+.xmax-w-3xl {
+  max-width: 48rem;
+}
+
+.xmax-w-4xl {
+  max-width: 56rem;
+}
+
+.xmax-w-screen-lg {
+  max-width: 990px;
+}
+
+.xmax-w-5xl {
+  max-width: 64rem;
+}
+
+.xmax-w-6xl {
+  max-width: 72rem;
+}
+
+.xmax-w-7xl {
+  max-width: 80rem;
+}
+
 .xgrid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.xgrid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.xgrid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.xgrid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .xflex-col {
   flex-direction: column;
+}
+
+.xgap-4 {
+  gap: 1rem;
+}
+
+.xgap-5 {
+  gap: 1.25rem;
+}
+
+.xgap-8 {
+  gap: 2rem;
+}
+
+.xgap-9 {
+  gap: 2.25rem;
+}
+
+.xgap-10 {
+  gap: 2.5rem;
 }
 
 .xself-center {
@@ -572,6 +704,36 @@ Ensure the default browser behavior of the `hidden` attribute.
 .xtext-8xl {
   font-size: 6rem;
   line-height: 1;
+}
+
+.xtext-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.xtext-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.xtext-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.xtext-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.xtext-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.xtext-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .xfont-semibold {

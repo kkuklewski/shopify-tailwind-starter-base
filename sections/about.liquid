@@ -1,21 +1,34 @@
-<div class='content-container color-{{ section.settings.color_scheme }}'>
-  <div class='about-section'>
+<div class='content-container color-{{ section.settings.color_scheme }} xmax-w-screen-xlg xmx-auto'>
+  <div class='about-section xrelative'>
+    <img
+      class='xabsolute xtop-0 xright-0'
+      src='{{ 'hi.svg' | asset_url }}'
+      alt=''
+    >
     <!-- First Column -->
-    <div>
-      <h1>{{ section.settings.heading_text }}</h1>
-      <p>{{ section.settings.paragraph_text }}</p>
+    <div class='xmax-w-6xl'>
+      <h1 class='xtext-8xl xmb-12 xtext-theme-600'>{{ section.settings.heading_text }}</h1>
+      <p class='xtext-3xl'>{{ section.settings.paragraph_text }}</p>
     </div>
     <!-- Second Column -->
-    <img
-      srcset='{{ section.settings.background_image | img_url: 'master' }}'
-      class='xw-full xh-auto xrounded-xl'
-      alt='image'
-    >
-    <img
-      srcset='{{ section.settings.background_image_2 | img_url: 'master' }}'
-      class='xw-full xh-auto xrounded-xl'
-      alt='image'
-    >
+    <div class='xgrid xgrid-cols-3 xmt-48 xgap-9'>
+      <img
+        srcset='{{ section.settings.background_image | img_url: 'master' }}'
+        class='xw-full xh-auto xrounded-xl'
+        alt='image'
+      >
+      <img
+        srcset='{{ section.settings.background_image_2 | img_url: 'master' }}'
+        class='xw-full xh-auto xrounded-xl'
+        alt='image'
+      >
+      <div>
+        <p class='xtext-2xl xmb-9'>{{ section.settings.paragraph }}</p>
+        <button class='xmt-12 xborder-2 xrounded-lg xborder-theme-400 xpy-4 xpx-8 xbg-theme-500 xtext-theme-50 xfont-bold hover:xbg-theme-600 active:xbg-theme-700'>
+          Nasze produkty
+        </button>
+      </div>
+    </div>
   </div>
 </div>
 
