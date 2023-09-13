@@ -1,7 +1,7 @@
 <div class="welcome-section twcss-grid twcss-grid-cols-2 twcss-gap-8">
   <!-- First Column -->
   <div class="twcss-col-span-1">
-    <h1 class="twcss-text-3xl twcss-font-semibold twcss-mb-4">{{ block.settings.heading_text }}</h1>
+    <h1 class="twcss-text-3xl twcss-font-semibold twcss-mb-4">{{ section.settings.heading_text }}</h1>
     <p class="twcss-text-gray-600 twcss-mb-4">{{ block.settings.paragraph_text }}</p>
     <a
       href="#"
@@ -21,7 +21,7 @@
   "name": "Welcome Section",
   "settings": [
     {
-         "id": "subtitle",
+         "id": "heading_text",
    			"type": "text",
    			"label": "place your subtitle",
    			"default": "default subtitle"
