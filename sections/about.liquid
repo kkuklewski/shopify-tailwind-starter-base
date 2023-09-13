@@ -1,25 +1,27 @@
 <div class='content-container color-{{ section.settings.color_scheme }}'>
-  <div class='welcome-section xgrid xgrid-cols-1 lg:xgrid-cols-2'>
+  <div class='about-section'>
     <!-- First Column -->
-    <div class='xflex xflex-col xalign-center xself-center xp-8 md:xmax-w-lg xmx-auto'>
-      <h1 class='xtext-8xl xfont-semibold xmb-4 xfont-normal xtext-theme-600'>{{ section.settings.heading_text }}</h1>
-      <p class='xmb-4 xfont-bold'>{{ section.settings.paragraph_text }}</p>
-      <button class='xmt-12 xborder-2 xrounded-lg xborder-theme-400 xpy-4 xpx-8 xbg-theme-500 xtext-theme-50 xfont-bold hover:xbg-theme-600 active:xbg-theme-700'>
-        Nasze produkty
-      </button>
+    <div>
+      <h1>{{ section.settings.heading_text }}</h1>
+      <p>{{ section.settings.paragraph_text }}</p>
     </div>
     <!-- Second Column -->
     <img
       srcset='{{ section.settings.background_image | img_url: 'master' }}'
       class='xw-full xh-auto xrounded-xl'
-      alt='hero image'
+      alt='image'
+    >
+    <img
+      srcset='{{ section.settings.background_image_2 | img_url: 'master' }}'
+      class='xw-full xh-auto xrounded-xl'
+      alt='image'
     >
   </div>
 </div>
 
 {% schema %}
 {
-  "name": "Welcome Section",
+  "name": "About Section",
   "class": "section",
   "settings": [
     {
@@ -43,6 +45,11 @@
     {
       "type": "image_picker",
       "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image_2",
       "label": "Background Image"
     },
     {
