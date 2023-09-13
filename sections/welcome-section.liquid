@@ -12,6 +12,7 @@
 
   <!-- Second Column -->
   <div class="twcss-col-span-1">
+    <img srcset="{{ section.settings.background_image | img_url: 'master' }}">
     <span>image here</span>
   </div>
 </div>
@@ -37,7 +38,12 @@
    			"type": "text",
    			"label": "place your paragraph",
    			"default": "default paragraph"
-   		}
+   		},
+        {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    }
   ],
   "presets": [
     {
