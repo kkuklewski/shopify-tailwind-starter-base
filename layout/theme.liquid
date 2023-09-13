@@ -44,9 +44,6 @@
     %}
 
     {% style %}
-    h1,h2,h3 {
-        color: {{ scheme.settings.heading }};
-    }
       {{ settings.type_body_font | font_face: font_display: 'swap' }}
       {{ body_font_bold | font_face: font_display: 'swap' }}
       {{ body_font_italic | font_face: font_display: 'swap' }}
@@ -80,9 +77,13 @@
       {% endfor %}
 
       {{ scheme_classes | prepend: 'body' }} {
-        color: rgba(var(--color-foreground), 0.75);
+        color: rgba(var(--color-foreground), 1);
         background-color: rgb(var(--color-background));
       }
+
+          h1,h2,h3 {
+        color: {{ settings.color_scheme.heading }} !important;
+    }
 
       :root {
         --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
