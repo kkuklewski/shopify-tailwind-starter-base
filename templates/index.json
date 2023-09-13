@@ -10,81 +10,15 @@
         "color_scheme": "background-1"
       }
     },
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
+    "cd95b1f1-96f9-48de-ba17-d9b761146fae": {
+      "type": "about",
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "inverse",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "inverse",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
+        "heading_text": "Dlaczego my?",
+        "paragraph_text": "Nasze produkty są wykonane z przyjaznych dla środowiska materiałów, a ich wzory są pełne uroku i radości, aby rozweselić przestrzeń dziecięcego świata.",
+        "paragraph": "W naszej ofercie znajdziesz różnorodne girlandy, lampy i dekoracje ścienne, które dodadzą magii i koloru do dziecięcego pokoju.",
+        "background_image": "shopify:\/\/shop_images\/kid.png",
+        "background_image_2": "shopify:\/\/shop_images\/flowers-in-yellow-watering-can_925x_84e6b75a-68a8-4855-83a5-e8f6bb730771.jpg",
+        "color_scheme": ""
       }
     },
     "featured_collection": {
@@ -224,8 +158,7 @@
   },
   "order": [
     "eb35a98f-330c-4bfc-9d23-5af708e9a790",
-    "image_banner",
-    "rich_text",
+    "cd95b1f1-96f9-48de-ba17-d9b761146fae",
     "featured_collection",
     "collage",
     "video",
