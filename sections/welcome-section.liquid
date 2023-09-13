@@ -1,15 +1,15 @@
 <div class="content-container color-{{ section.settings.color_scheme }}">
-  <div class="welcome-section twcss-grid twcss-grid-cols-2 twcss-py-12 twcss-mx-auto twcss-max-w-screen-lg ">
+  <div class="welcome-section xgrid xgrid-cols-1 lg:xgrid-cols-2">
     <!-- First Column -->
-    <div>
-      <h1 class="twcss-text-7xl twcss-font-semibold twcss-mb-4">{{ section.settings.heading_text }}</h1>
-      <p class="twcss-mb-4">{{ section.settings.paragraph_text }}</p>
-      <button>Button</button>
+    <div class="xflex xflex-col xalign-center xself-center xp-8 md:xmax-w-lg xmx-auto">
+      <h1 class="xtext-8xl xfont-semibold xmb-4 xfont-normal xtext-theme-600">{{ section.settings.heading_text }}</h1>
+      <p class="xmb-4 xfont-bold">{{ section.settings.paragraph_text }}</p>
+      <button class="xmt-12 xborder-2 xrounded-lg xborder-theme-400 xpy-4 xpx-8 xbg-theme-500 xtext-theme-50 xfont-bold hover:xbg-theme-600 active:xbg-theme-700">Nasze produkty</button>
     </div>
     <!-- Second Column -->
     <img
       srcset="{{ section.settings.background_image | img_url: 'master' }}"
-      class="twcss-w-full twcss-h-auto twcss-rounded-xl"
+      class="xw-full xh-auto xrounded-xl"
       alt="hero image"
     >
   </div>
