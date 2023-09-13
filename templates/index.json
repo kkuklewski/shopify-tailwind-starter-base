@@ -1,5 +1,13 @@
 {
   "sections": {
+    "eb35a98f-330c-4bfc-9d23-5af708e9a790": {
+      "type": "welcome-section",
+      "settings": {
+        "heading_text": "default subtitle",
+        "paragraph_text": "default title",
+        "paragraph": "default paragraph"
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -213,6 +221,7 @@
     }
   },
   "order": [
+    "eb35a98f-330c-4bfc-9d23-5af708e9a790",
     "image_banner",
     "rich_text",
     "featured_collection",
