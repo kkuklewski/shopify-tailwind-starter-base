@@ -1,0 +1,53 @@
+<div class="welcome-section twcss-grid twcss-grid-cols-2 twcss-gap-8">
+  <!-- First Column -->
+  <div class="twcss-col-span-1">
+    <h1 class="twcss-text-3xl twcss-font-semibold twcss-mb-4">{{ block.settings.heading_text }}</h1>
+    <p class="twcss-text-gray-600 twcss-mb-4">{{ block.settings.paragraph_text }}</p>
+    <a href="#" class="twcss-bg-blue-500 twcss-text-white twcss-px-4 twcss-py-2 twcss-rounded twcss-hover:bg-blue-600 twcss-transition twcss-duration-300">Button</a>
+  </div>
+  
+  <!-- Second Column -->
+  <div class="twcss-col-span-1">
+    <img src="{{ 'your-image.jpg' | asset_url }}" alt="Image Description" class="twcss-w-full twcss-h-auto">
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Welcome Section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "Heading",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Heading Text",
+          "id": "heading_text",
+          "default": "Your Heading Here"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "name": "Paragraph",
+      "settings": [
+        {
+          "type": "textarea",
+          "label": "Paragraph Text",
+          "id": "paragraph_text",
+          "default": "Your paragraph text goes here."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Default",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
